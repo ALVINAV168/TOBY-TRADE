@@ -93,7 +93,7 @@ async function migrateLegacyPasswords(){let changed=false;for(const u of state.u
 function gateUnlocked(){return sessionStorage.getItem('toby_gate_unlocked')==='1'}
 function b64bytes(v){return Uint8Array.from(atob(v),c=>c.charCodeAt(0))}
 async function verifyAccessKey(key){
-  if(!key||key.length<12)return false;
+  if(!key||key.length<8)return false;
   try{
     const material=await crypto.subtle.importKey('raw',new TextEncoder().encode(key),'PBKDF2',false,['deriveKey']);
     const aes=await crypto.subtle.deriveKey({name:'PBKDF2',salt:b64bytes(ACCESS_SECURITY.salt),iterations:ACCESS_SECURITY.iterations,hash:'SHA-256'},material,{name:'AES-GCM',length:256},false,['decrypt']);
