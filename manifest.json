@@ -1,0 +1,25 @@
+{
+  "name": "TOBY TRADE",
+  "short_name": "TOBY",
+  "description": "Demo Trading Simulator",
+  "start_url": "/TOBY-TRADE/",
+  "scope": "/TOBY-TRADE/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#060606",
+  "theme_color": "#060606",
+  "icons": [
+    {
+      "src": "/TOBY-TRADE/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/TOBY-TRADE/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
