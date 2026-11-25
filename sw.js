@@ -1,4 +1,4 @@
-const CACHE_NAME = 'toby-trade-v1';
+const CACHE_NAME = 'toby-trade-v2';
 const APP_SHELL = [
   '/TOBY-TRADE/',
   '/TOBY-TRADE/index.html',
